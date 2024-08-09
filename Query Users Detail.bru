@@ -1,0 +1,26 @@
+meta {
+  name: Query Users Detail
+  type: graphql
+  seq: 5
+}
+
+post {
+  url: https://lm4ypq47wbebllnggd2owqoz5i.appsync-api.ap-south-1.amazonaws.com/graphql
+  body: graphql
+  auth: none
+}
+
+headers {
+  x-api-key: da2-t3cbg5mmqbdenn6sycjbppnuri
+  Content-Type: application/json
+}
+
+body:graphql {
+  query MyQuery {
+    getApplication(id: "b08ce9f7-b259-5b26-b63a-b266659508ed") {
+        id,
+        name,
+    }
+  }
+  
+}

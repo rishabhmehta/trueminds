@@ -1,0 +1,283 @@
+meta {
+  name: User Detail
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: https://lm4ypq47wbebllnggd2owqoz5i.appsync-api.ap-south-1.amazonaws.com/graphql
+  body: graphql
+  auth: none
+}
+
+headers {
+  x-api-key: da2-t3cbg5mmqbdenn6sycjbppnuri
+  Content-Type: application/json
+}
+
+body:graphql {
+  query QueryUser {
+     getUser(id: "24c697b7-e2f0-4808-b832-ac10f7940981") {
+      status
+      message
+      data {
+        id
+        activationDate
+        active
+        investments{
+          id
+          absoluteReturns
+          amc
+          cagr
+          category
+          classification
+          expectedReturns
+          expectedSIPReturns
+          folio
+          investmentAmount
+          investmentValue
+          nature
+          rtaCode
+          schemeName
+          status
+          units
+        }
+        address {
+          addressLineOne
+          addressLineThree
+          addressLineTwo
+          addressType
+          city
+          completeAddress
+          country
+          pinCode
+          state
+        }
+        agreement {
+          documentId
+          documentName
+          eSigned
+        }
+        aofUploaded
+        application {
+          agreement {
+            documentId
+            documentName
+            eSigned
+          }
+          bank {
+            accountName
+            accountNumber
+            accountType
+            address
+            branch
+            bseBankCode
+            city
+            ifsc
+            nachCode
+            name
+            state
+            verified
+          }
+          basicDetail {
+            annualIncome
+            occupation
+            sourceOfWealth
+          }
+          chequeName
+          completed
+          currentStep
+          documents {
+            name
+            path
+            type
+          }
+          email
+          emailVerified
+          id
+          kycVerified
+          mandate {
+            amount
+            bankAccountNumber
+            endDate
+            frequency
+            id
+            individualId
+            mandateStatus
+            npciTransactionId
+            startDate
+            type
+          }
+          mobile
+          mobileVerified
+          name
+          nominee {
+            name
+            relationship
+          }
+          overseasTax {
+            taxObligationIdentifications {
+              country
+              identificationNumber
+              identificationType
+            }
+            taxObligationOutsideIndia
+          }
+          pan
+          pancard {
+            accountType
+            address {
+              addressLineThree
+              addressLineTwo
+              addressLineOne
+              addressType
+              city
+              completeAddress
+              country
+              pinCode
+              state
+            }
+            dateOfBirth
+            email
+            gender
+            mobile
+            kycStatus
+            isPep
+            name
+            panCardNumber
+          }
+          plan
+          processed
+          signature
+        }
+        banks {
+          accountName
+          accountNumber
+          accountType
+          branch
+          city
+          address
+          bseBankCode
+          ifsc
+          nachCode
+          name
+          state
+          verified
+        }
+        basicDetail {
+          annualIncome
+          occupation
+          sourceOfWealth
+        }
+        clientCode
+        contactDetails {
+          email
+          emailVerified
+          mobile
+          mobileVerified
+        }
+        createdAt
+        documents {
+          name
+          path
+          type
+        }
+        fatcaUploaded
+        joiningDate
+        mandate {
+          UMRN
+          amount
+          approvedDate
+          bankAccountNumber
+          bankBranch
+          clientName
+          bankName
+          clientcode
+          collectionType
+          endDate
+          frequency
+          id
+          individualId
+          mandateStatus
+          mandateType
+          npciTransactionId
+          provider
+          registrationDate
+          remarks
+          startDate
+          type
+          uploadDate
+        }
+        name
+        nominee {
+          name
+          relationship
+        }
+        pan
+        pancard {
+          accountType
+          address {
+            addressLineOne
+            addressLineThree
+            addressLineTwo
+            addressType
+            city
+            completeAddress
+            country
+            pinCode
+            state
+          }
+          dateOfBirth
+          email
+          gender
+          isPep
+          kycStatus
+          panCardNumber
+          name
+          mobile
+        }
+        primaryBank {
+          accountName
+          accountNumber
+          address
+          branch
+          bseBankCode
+          accountType
+          city
+          ifsc
+          nachCode
+          name
+          verified
+          state
+        }
+        riskProfile
+        signature
+        subscription {
+          credits
+          endDate
+          id
+          mandate {
+            amount
+            bankAccountNumber
+            endDate
+            frequency
+            mandateStatus
+            id
+            individualId
+            npciTransactionId
+            startDate
+            type
+          }
+          mandateId
+          plan
+          startDate
+          status
+        }
+        subscriptionId
+        uccRegistered
+        verified
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,34 @@
+meta {
+  name: Update Created - Activation Date
+  type: graphql
+  seq: 3
+}
+
+post {
+  url: https://lm4ypq47wbebllnggd2owqoz5i.appsync-api.ap-south-1.amazonaws.com/graphql
+  body: graphql
+  auth: none
+}
+
+headers {
+  x-api-key: da2-t3cbg5mmqbdenn6sycjbppnuri
+  Content-Type: application/json
+}
+
+body:graphql {
+  mutation MyMutation {
+    updateCreatedAndActivationDate(input: {
+      id: "4caa2a1b-9adf-4be7-acee-9ad0b3b96d06",
+      createdAt:"2024-05-15",
+      activationDate: "2024-05-15"
+    }){
+      status
+      message
+      data{
+        id
+        name
+      }
+    }
+  }
+  
+}
