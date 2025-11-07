@@ -42,3 +42,11 @@ body:graphql {
   }
   
 }
+
+script:post-response {
+  const fs = require("fs");
+  
+  const filePath = "/Users/rishabhmehta/dev/projects/techpix/collections/truemind/Trueminds/Query Users.bru/response.json";
+  fs.writeFileSync(filePath, JSON.stringify(response.data, null, 2));
+  
+}
